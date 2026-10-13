@@ -1,6 +1,6 @@
-// readwithatom.org now only helps people move to read.learnwithatom.org.
+// readwithatom.org now only helps people move to learnwithatom.org.
 // This replaces the old app's offline copy so everyone lands on the moving page.
-const CACHE = "atom-move-1";
+const CACHE = "atom-move-2";
 self.addEventListener("install", e => {
   e.waitUntil((async () => { const c = await caches.open(CACHE); try { await c.add(new Request("index.html", { cache: "reload" })); } catch (err) {} await self.skipWaiting(); })());
 });

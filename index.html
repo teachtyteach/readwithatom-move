@@ -33,16 +33,16 @@ button:disabled{opacity:.5}
 <main>
   <div class="ic"><svg viewBox="0 0 48 48" width="64" height="64" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#e8453c"/><path d="M14 25h17M25 17l8 8-8 8" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   <h1>Atom has moved!</h1>
-  <p>Atom's new home is <b>read.learnwithatom.org</b>.<br>Bring your books, stats and rewards with you.</p>
+  <p>Atom's new home is <b>learnwithatom.org</b>.<br>Bring your books, stats and rewards with you.</p>
   <ol>
     <li id="s1"><b>Save your backup.</b><small>One file with everything in it.</small><button class="primary" id="save" disabled>Getting your stuff ready…</button></li>
-    <li id="s2"><b>Open the new Atom.</b><small>Tap Restore backup and pick your file. Then add it to your home screen.</small><a class="btn" href="https://read.learnwithatom.org/">Open read.learnwithatom.org</a></li>
+    <li id="s2"><b>Open the new Atom.</b><small>Tap Restore backup and pick your file. Then add learnwithatom.org to your Home Screen. Reading and Math are one app now.</small><a class="btn" href="https://learnwithatom.org/read/">Open learnwithatom.org</a></li>
   </ol>
   <div id="msg"></div>
 </main>
 <script>
 (function () {
-  const NEW = "https://read.learnwithatom.org/";
+  const NEW = "https://learnwithatom.org/read/";
   const get = (k, d) => { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } };
   const msg = t => { document.getElementById("msg").textContent = t; };
   const lib = get("pace:lib", []);
